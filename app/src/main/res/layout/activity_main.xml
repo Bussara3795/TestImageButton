@@ -9,7 +9,26 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.nattapat.imagebutton.MainActivity">
+    tools:context="com.example.nattapat.imagebutton.MainActivity"
+    android:layout_marginLeft="20dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <Button
+            android:text="ลงทะเบียนการจอง"
+            android:layout_width="match_parent"
+            android:id="@+id/button2"
+            android:layout_weight="0.68"
+            android:layout_height="wrap_content"
+            android:textStyle="normal|bold"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:background="@color/colorAccent" />
+    </LinearLayout>
 
     <TextView
         android:text="จองล๊อกตลาด"
@@ -25,11 +44,11 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:weightSum="2"
-        android:layout_marginLeft="30dp">
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="40dp">
 
         <LinearLayout
             android:orientation="vertical"
@@ -259,4 +278,5 @@
         </LinearLayout>
 
     </LinearLayout>
+
 </RelativeLayout>
